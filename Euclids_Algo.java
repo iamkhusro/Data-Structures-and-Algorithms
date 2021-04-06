@@ -7,13 +7,13 @@ public class Euclids_Algo {
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
         int r = 0;
-        if(num2 > num1)
+        if (num2 > num1)
             num2 = num1 + num2 - (num1 = num2);
 
-        while(num1 >= num2)
+        while (num1 >= num2)
         {
             r = num1 % num2;
-            if(r == 0)
+            if (r == 0)
             {
                 System.out.println(String.format("HCF: %d", num2));
                 return;
